@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo de Pedro Augusto Nunes Machado</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">	
     <style>
         body {
             background-color: #000;
@@ -307,6 +308,17 @@ $ "Projeto da Porta: Projeto de segurança para controlar o acesso físico a amb
             star.style.left = `${Math.random() * 100}vw`;
             stars.appendChild(star);
         }
+        // Desabilitar o menu de contexto (botão direito do mouse)
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        // Bloquear atalhos de desenvolvedor
+        document.addEventListener('keydown', event => {
+            if (event.key === 'F12' || 
+                (event.ctrlKey && event.shiftKey && event.key === 'I') || 
+                (event.ctrlKey && event.key === 'U')) {
+                event.preventDefault();
+            }
+	});
     </script>
 </body>
 </html>
