@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site em Reforma</title>
+    <style>
+        /* Estilo geral */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Fira Code', monospace;
+            background: url('https://cdn.discordapp.com/attachments/1349890690972258405/1351986747461996628/page.png?ex=67dc5f47&is=67db0dc7&hm=1b41db929052a256e6ce6c88f85d3f2ae4753800219dd155d5869801df5f50e5') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff; /* Texto branco */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Overlay Roxo */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(44, 0, 62, 0.3); /* Roxo escuro semi-transparente */
+            z-index: -1;
+        }
+
+        /* Container principal */
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #9c27b0; /* Sombra roxa */
+            backdrop-filter: blur(0px); /* Efeito de vidro fosco leve */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: terminal-blink 1.5s infinite;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #d1d1d1; /* Cinza claro para o texto secundário */
+        }
+
+        /* Links */
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .link {
+            display: inline-block;
+            width: 200px; /* Largura fixa para todos os botões */
+            padding: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            text-align: center;
+            background: #4a148c; /* Roxo mais claro para os botões */
+            border: 2px solid #9c27b0; /* Borda roxa */
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(156, 39, 176, 0.5); /* Sombra discreta */
+        }
+
+        .link:hover {
+            background: #9c27b0; /* Roxo mais vibrante ao passar o mouse */
+            box-shadow: 0 0 15px #9c27b0; /* Sombra mais intensa */
+        }
+
+        .link img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        /* Animação Terminal Blink */
+        @keyframes terminal-blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* Versão Antiga */
+        .old-version {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+
+        .old-version a {
+            color: #9c27b0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .old-version a:hover {
+            color: #ffffff;
+        }
+
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.9rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Site em reforma</h1>
+        <p>Em breve, uma nova cara para o site. Enquanto isso, entre em contato comigo pelas redes abaixo:</p>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/p3g4su" target="_blank" class="link">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"> [ LinkedIn ]
+            </a>
+            <a href="mailto:panmachado301@gmail.com" class="link">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"> [ Email ]
+            </a>
+            <a href="https://github.com/P3g4su/mytools" target="_blank" class="link">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"> [ GitHub ]
+            </a>
+            <a href="https://www.youtube.com/@P3g4su" target="_blank" class="link">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"> [ YouTube ]
+            </a>
+            <a href="curriculo.pdf" download class="link">
+                <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Download Currículo"> [ Download CV ]
+            </a>
+        </div>
+        <div class="old-version">
+            <a href="antigo/old.html">Versão Anterior</a>
+        </div>
+    </div>
+    <footer>&copy; 2025 - P3g4su</footer>
+</body>
+</html>
